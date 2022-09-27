@@ -37,6 +37,15 @@
     --fs-button: var(--fs-300);
 }
 
+.dark-mode {
+    --clr-primary-900: hsl(0 0% 0%);
+    --clr-primary-700: hsl(0 0% 14%);
+    --clr-primary-500: hsl(0 0% 20%);
+
+    --clr-accent-800: hsl(0 0% 27%);
+    --clr-accent-400: hsl(0 0% 41);
+}
+
 
 /*       */
 /* reset */
@@ -130,6 +139,7 @@ select {
         scroll-behavior: auto !important;
     }
 }
+
 /*                 */
 /* Utility classes */
 /*                 */
@@ -150,7 +160,7 @@ select {
     place-items: center;
 }
 
-.grid-container > * {
+.grid-container>* {
     max-width: 50ch;
 }
 
@@ -172,7 +182,7 @@ select {
     display: block;
 }
 
-.flow > *:where(:not(:first-child)) {
+.flow>*:where(:not(:first-child)) {
     margin-top: var(--flow-space, 1rem);
 }
 
@@ -347,6 +357,34 @@ select {
     display: none;
 }
 
+.dark-mode-toggle {
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+}
+
+.dark-mode-toggle:hover {
+    cursor: pointer;
+}
+
+.sun-icon {
+    display: none;
+    fill: white;
+}
+
+.moon-icon {
+    fill: white;
+}
+
+.sun-icon-darkmode {
+    display: block;
+}
+
+.moon-icon-darkmode {
+    display: none;
+}
+
 @media (max-width: 45em) {
     .primary-navbar {
         position: fixed;
@@ -376,7 +414,7 @@ select {
     .mobile-nav-toggle {
         display: block;
         position: absolute;
-        background-image: url("assets/icons/icon-hamburger.svg");
+        background-image: url("./assets/icons/icon-hamburger.svg");
         background-repeat: no-repeat;
         background-color: transparent;
         top: 1.75rem;
@@ -388,11 +426,18 @@ select {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("assets/icons/icon-close.svg");
+        background-image: url("./assets/icons/icon-close.svg");
     }
 
     .mobile-nav-toggle:hover {
         cursor: pointer;
+    }
+
+    .dark-mode-toggle {
+        position: absolute;
+        top: 30%;
+        right: 15%;
+        z-index: 9999;
     }
 }
 
@@ -408,6 +453,15 @@ select {
 
     .nav-buttons {
         padding-left: 1.5rem;
+    }
+
+    .nav-top-right {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dark-mode-toggle {
+        margin-left: 1.5rem;
     }
 }
 
@@ -513,7 +567,7 @@ select {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1.2s;
+    transition: transform 700ms ease-out, filter 850ms ease-in;
 }
 
 .show {

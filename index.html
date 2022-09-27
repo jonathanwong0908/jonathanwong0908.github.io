@@ -1,108 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Jonathan Wong</title>
 
-        <link rel="shortcut icon" type="image/png" href="./favicon/favicon.png">
-        <link rel="stylesheet" href="./style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
-        
-        <script src="./app.js" defer></script>
-        <script src="https://kit.fontawesome.com/2308894a4c.js" crossorigin="anonymous"></script>
-    </head>
-    <body>
-        <header class="primary-header">
-            <nav class="primary-navbar flex bg-primary-700">
-                <div class="flex">
-                    <a href="#" class="logo ff-primary fs-700 fw-semi-bold text-neutral-100"><span class="text-accent-400">J</span>W,</a>
-                </div>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonathan Wong</title>
 
-                <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
-                class="sr-only">Menu</span></button>
+    <link rel="shortcut icon" type="image/png" href="./favicon/favicon.png">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
 
-                <div>
-                    <ul id="primary-navigation" data-visible="false" class="flex primary-navigation bg-primary-700">
-                        <li class="nav-buttons"><a href="index.html" class="text-neutral-100 ff-primary">Home</a></li>
-                        <li class="nav-buttons"><a href="#" class="text-neutral-100 ff-primary">Projects</a></li>
-                        <li class="nav-buttons"><a href="blog.html" class="text-neutral-100 ff-primary">Blog</a></li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <script src="./app.js" defer></script>
+    <script src="https://kit.fontawesome.com/2308894a4c.js" crossorigin="anonymous"></script>
+</head>
 
-        <main>
-            <section class="intro-section grid bg-primary-500">
-                <div class="grid-container hidden">
-                    <div class="intro-paragraph">
-                        <h1 class="ff-primary fw-semi-bold fs-800 text-neutral-100">Hello, I'm <span class="fw-bold">Jonathan</span></h1>
-                        <p class="ff-primary fs-600 text-neutral-100">A software engineer to be.</p>
-                        <div class="contact-info flex">
-                            <a class="text-neutral-100" href="https://www.linkedin.com/in/jonathan-thomas-wong/" target="_blank" class="social-icons">
-                                <i class="fa-brands fa-linkedin fa-xl"></i>
-                            </a>
-                            <a class="text-neutral-100" href="https://github.com/Ghuyers" target="_blank" class="social-icons">
-                                <i class="fa-brands fa-github fa-xl"></i>
-                            </a>
-                            <a class="text-neutral-100" href="mailto: jonathanwong0908@gmail.com" class="social-icons">
-                                <i class="fa-solid fa-envelope fa-xl"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="intro-pic">
-                        <img src="./Assets/photos/About.jpg" alt="profile picture" class="profile-pic">
-                    </div>
-                </div>
-            </section>
-        </main>
+<body>
+    <header class="primary-header">
+        <nav class="primary-navbar flex bg-primary-700">
+            <div class="flex">
+                <a href="#" class="logo ff-primary fs-700 fw-semi-bold text-neutral-100"><span
+                        class="text-accent-400">J</span>W,</a>
+            </div>
 
-        <section class="about-section body-section grid bg-accent-800">
-            <h2 class="ff-primary fw-semi-bold fs-700 text-neutral-100 section-title">About Me</h2>
+            <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span
+                    class="sr-only">Menu</span></button>
+
+            <div class="nav-top-right flex">
+                <button class="dark-mode-toggle flex">
+                    <svg class="sun-icon text-neutral-100" style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path
+                            d="M3.55 19.09L4.96 20.5L6.76 18.71L5.34 17.29M12 6C8.69 6 6 8.69 6 12S8.69 18 12 18 18 15.31 18 12C18 8.68 15.31 6 12 6M20 13H23V11H20M17.24 18.71L19.04 20.5L20.45 19.09L18.66 17.29M20.45 5L19.04 3.6L17.24 5.39L18.66 6.81M13 1H11V4H13M6.76 5.39L4.96 3.6L3.55 5L5.34 6.81L6.76 5.39M1 13H4V11H1M13 20H11V23H13" />
+                    </svg>
+                    <svg class="moon-icon text-neutral-100" style="width:24px;height:24px" viewBox="0 0 24 24">
+                        <path
+                            d="M17.75,4.09L15.22,6.03L16.13,9.09L13.5,7.28L10.87,9.09L11.78,6.03L9.25,4.09L12.44,4L13.5,1L14.56,4L17.75,4.09M21.25,11L19.61,12.25L20.2,14.23L18.5,13.06L16.8,14.23L17.39,12.25L15.75,11L17.81,10.95L18.5,9L19.19,10.95L21.25,11M18.97,15.95C19.8,15.87 20.69,17.05 20.16,17.8C19.84,18.25 19.5,18.67 19.08,19.07C15.17,23 8.84,23 4.94,19.07C1.03,15.17 1.03,8.83 4.94,4.93C5.34,4.53 5.76,4.17 6.21,3.85C6.96,3.32 8.14,4.21 8.06,5.04C7.79,7.9 8.75,10.87 10.95,13.06C13.14,15.26 16.1,16.22 18.97,15.95M17.33,17.97C14.5,17.81 11.7,16.64 9.53,14.5C7.36,12.31 6.2,9.5 6.04,6.68C3.23,9.82 3.34,14.64 6.35,17.66C9.37,20.67 14.19,20.78 17.33,17.97Z" />
+                    </svg>
+                </button>
+                <ul id="primary-navigation" data-visible="false" class="flex primary-navigation bg-primary-700">
+                    <li class="nav-buttons"><a href="index.html" class="text-neutral-100 ff-primary">Home</a></li>
+                    <li class="nav-buttons"><a href="#project-section" class="text-neutral-100 ff-primary">Projects</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="intro-section grid bg-primary-500">
             <div class="grid-container hidden">
-                <img src="./Assets/photos/snake.jpg" alt="a snake and i" class="profile-pic about-pic">
-                <p class="ff-primary text-neutral-100 about-paragraph">I have worked in various industries but could not really find my passion, until I wrote my first Hello World in VBA. I am currently a bootcamper and can't wait to get burned out by codes before entering the horizon of software engineering</p>
-            </div>
-        </section>
-
-        <section class="journey-section body-section grid bg-primary-900">
-            <h2 class="ff-primary fw-semi-bold fs-700 text-neutral-100 section-title">My Journey</h2>
-            <div class="timeline grid">
-                <div class="grid-container journey-container flow hidden">
-                    <div class="journey-block journey-bootcamp bg-accent-800 flow">
-                        <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">Web Development Bootcamp</h3>
-                        <p class="ff-primary text-neutral-100">This is where I will grind my ass off with million lines of codes</p>
+                <div class="intro-paragraph">
+                    <h1 class="ff-primary fw-semi-bold fs-800 text-neutral-100">Hello, I'm <span
+                            class="fw-bold">Jonathan</span></h1>
+                    <p class="ff-primary fs-600 text-neutral-100">A software engineer to be.</p>
+                    <div class="contact-info flex">
+                        <a class="text-neutral-100" href="https://www.linkedin.com/in/jonathan-thomas-wong/"
+                            target="_blank" class="social-icons">
+                            <i class="fa-brands fa-linkedin fa-xl"></i>
+                        </a>
+                        <a class="text-neutral-100" href="https://github.com/Ghuyers" target="_blank"
+                            class="social-icons">
+                            <i class="fa-brands fa-github fa-xl"></i>
+                        </a>
+                        <a class="text-neutral-100" href="mailto: jonathanwong0908@gmail.com" class="social-icons">
+                            <i class="fa-solid fa-envelope fa-xl"></i>
+                        </a>
                     </div>
-                    <div class="journey-block journey-marketing bg-accent-800 flow">
-                        <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">Marketing Executive</h3>
-                        <p class="ff-primary text-neutral-100">Communicated with website providers on improvements for both website frontend and backend</p>
-                    </div>
-                    <div class="journey-block journey-finance bg-accent-800 flow">
-                        <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">HR and Master Data Intern</h3>
-                        <p class="ff-primary text-neutral-100">This was where I first tapped into the world of programming with VBA</p>
-                    </div>
+                </div>
+                <div class="intro-pic">
+                    <img src="./Assets/photos/About.jpg" alt="profile picture" class="profile-pic">
                 </div>
             </div>
         </section>
+    </main>
 
-        <footer class="footer bg-primary-500 grid flow">
-            <div class="contact-info flex">
-                <a class="text-neutral-100" href="https://www.linkedin.com/in/jonathan-thomas-wong/" target="_blank"
-                    class="social-icons">
-                    <i class="fa-brands fa-linkedin fa-xl"></i>
-                </a>
-                <a class="text-neutral-100" href="https://github.com/Ghuyers" target="_blank" class="social-icons">
-                    <i class="fa-brands fa-github fa-xl"></i>
-                </a>
-                <a class="text-neutral-100" href="mailto: jonathanwong0908@gmail.com" class="social-icons">
-                    <i class="fa-solid fa-envelope fa-xl"></i>
-                </a>
+    <section class="about-section body-section grid bg-accent-800">
+        <h2 class="ff-primary fw-semi-bold fs-700 text-neutral-100 section-title">About Me</h2>
+        <div class="grid-container hidden">
+            <img src="./Assets/photos/snake.jpg" alt="a snake and i" class="profile-pic about-pic">
+            <p class="ff-primary text-neutral-100 about-paragraph">I have worked in various industries but could not
+                really find my passion, until I wrote my first Hello World in VBA. I am currently a bootcamper and can't
+                wait to get burned out by codes before entering the horizon of software engineering</p>
+        </div>
+    </section>
+
+    <section class="journey-section body-section grid bg-primary-900">
+        <h2 class="ff-primary fw-semi-bold fs-700 text-neutral-100 section-title">My Journey</h2>
+        <div class="timeline grid">
+            <div class="grid-container journey-container flow hidden">
+                <div class="journey-block journey-bootcamp bg-accent-800 flow">
+                    <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">Web Development Bootcamp</h3>
+                    <p class="ff-primary text-neutral-100">This is where I will grind my ass off with million lines of
+                        codes</p>
+                </div>
+                <div class="journey-block journey-marketing bg-accent-800 flow">
+                    <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">Marketing Executive</h3>
+                    <p class="ff-primary text-neutral-100">Communicated with website providers on improvements for both
+                        website frontend and backend</p>
+                </div>
+                <div class="journey-block journey-finance bg-accent-800 flow">
+                    <h3 class="ff-primary fs-600 fw-semi-bold text-neutral-100">HR and Master Data Intern</h3>
+                    <p class="ff-primary text-neutral-100">This was where I first tapped into the world of programming
+                        with VBA</p>
+                </div>
             </div>
-            <p class="ff-primary text-neutral-100">&#169 Jonathan Wong</p>
-        </footer>
-    </body>
+        </div>
+    </section>
+
+    <section class="projects-section">
+
+    </section>
+
+    <footer class="footer bg-primary-500 grid flow">
+        <div class="contact-info flex">
+            <a class="text-neutral-100" href="https://www.linkedin.com/in/jonathan-thomas-wong/" target="_blank"
+                class="social-icons">
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+            </a>
+            <a class="text-neutral-100" href="https://github.com/Ghuyers" target="_blank" class="social-icons">
+                <i class="fa-brands fa-github fa-xl"></i>
+            </a>
+            <a class="text-neutral-100" href="mailto: jonathanwong0908@gmail.com" class="social-icons">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+            </a>
+        </div>
+        <p class="ff-primary text-neutral-100">&#169 Jonathan Wong</p>
+    </footer>
+</body>
+
 </html>
