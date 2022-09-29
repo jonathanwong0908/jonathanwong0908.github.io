@@ -414,7 +414,7 @@ select {
     .mobile-nav-toggle {
         display: block;
         position: absolute;
-        background-image: url("./assets/icons/icon-hamburger.svg");
+        background-image: url("./Assets/icons/icon-hamburger.svg");
         background-repeat: no-repeat;
         background-color: transparent;
         top: 1.75rem;
@@ -426,7 +426,7 @@ select {
     }
 
     .mobile-nav-toggle[aria-expanded="true"] {
-        background-image: url("./assets/icons/icon-close.svg");
+        background-image: url("./Assets/icons/icon-close.svg");
     }
 
     .mobile-nav-toggle:hover {
