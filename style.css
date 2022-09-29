@@ -373,16 +373,13 @@ select {
     fill: white;
 }
 
-.sun-icon:hover {
+.sun-icon:hover,
+.moon-icon:hover {
     fill: var(--clr-accent-400);
 }
 
 .moon-icon {
     fill: white;
-}
-
-.moon-icon:hover {
-    fill: var(--clr-accent-400);
 }
 
 .sun-icon-darkmode {
