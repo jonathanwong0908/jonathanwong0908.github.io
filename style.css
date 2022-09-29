@@ -373,8 +373,16 @@ select {
     fill: white;
 }
 
+.sun-icon:hover {
+    fill: var(--clr-accent-400);
+}
+
 .moon-icon {
     fill: white;
+}
+
+.moon-icon:hover {
+    fill: var(--clr-accent-400);
 }
 
 .sun-icon-darkmode {
@@ -476,7 +484,7 @@ select {
 }
 
 .contact-info a:hover {
-    color: var(--clr-primary-700);
+    color: var(--clr-accent-400);
 }
 
 @media (min-width: 45.000001em) {
